@@ -184,15 +184,15 @@ package.json              - Dependencies and scripts
 
 ## Features
 
-✅ Full CRUD operations on all tables  
-✅ Beautiful web dashboard  
-✅ RESTful API endpoints  
-✅ JSON request/response format  
-✅ Error handling and validation  
-✅ Auto-generated timestamps (created_at, updated_at)  
-✅ Pagination support  
-✅ Search functionality  
-✅ CORS enabled (can add more origins)  
+Full CRUD operations on all tables  
+Web dashboard  
+RESTful API endpoints  
+JSON request/response format  
+Error handling and validation  
+Auto-generated timestamps (created_at, updated_at)  
+Pagination support  
+Search functionality  
+CORS enabled (can add more origins)  
 
 ## Next Steps
 

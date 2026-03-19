@@ -126,7 +126,21 @@
     function openModal() {
       editingId = null;
       document.getElementById('modal-title').textContent = `Add ${currentTable}`;
-      document.getElementById('modal-form').innerHTML = '';
+      const form = document.getElementById('modal-form');
+      
+      // Generate form fields from current records' columns
+      if (currentRecords.length > 0) {
+        const columns = Object.keys(currentRecords[0]).filter(col => col !== 'id');
+        form.innerHTML = columns.map(col => {
+          return `
+            <div class="form-group">
+              <label>${col}</label>
+              <input type="text" name="${col}" value="" />
+            </div>
+          `;
+        }).join('');
+      }
+      
       document.getElementById('modal').classList.add('active');
     }
 
